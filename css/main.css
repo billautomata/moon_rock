@@ -1,0 +1,102 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+@font-face {
+ font-family: 'base-font';
+ src: url('/fonts/Lato-Regular.ttf') format('truetype');
+}
+
+body {
+  font-family: 'base-font', sans-serif;
+  overflow-x: hidden;
+  padding-bottom: 40px;
+}
+
+.full-width-video {
+  width: 100%;
+}
+
+div#services {
+  padding-top: 20px;
+}
+
+.jumbotron {
+  padding-bottom: 10px;
+}
+
+.services-header-label {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+.photos {
+  /*width: 100%;*/
+}
+
+.photos img {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.imger {
+  width: 33%;
+  display: inline-block;
+}
+
+.talk {
+  font-size: 20px;
+}
+
+.mapping-header {
+  height: 200px;
+  background: url(/img/mapping_header.jpg);
+  background-size: cover;
+  background-position: 0px -250px;
+  background-repeat: no-repeat;
+}
+
+.order-header {
+  height: 200px;
+  background: url(/img/drone_2_resized.jpg);
+  background-size: cover;
+  background-position: 0px -250px;
+  background-repeat: no-repeat;
+}
+
+.banner-companyname {
+  color: black;
+  margin-top: -2em;
+  font-size: 66px;
+  color: white;
+  text-shadow: 1px 1px 4px black;
+}
+
+.three-dee-demo-frame {
+  margin-top: 20px;
+}
+
+.three-dee-demo-warning {
+  display: none;
+}
+
+/* Portrait and Landscape */
+@media screen and (max-width: 500px) {
+   .imger {
+     width: 96%;
+     display: block;
+   }
+   .mapping-header {
+     background-position: 0px 0px;
+   }
+   .three-dee-demo-warning {
+    display: block;
+   }
+   .three-dee-demo-frame {
+     display: none;
+   }
+   #demo-3d-controls {
+     display: none;
+   }
+
+}
